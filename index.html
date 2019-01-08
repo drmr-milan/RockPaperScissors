@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock Paper Scissiors</title>
+
+    <link rel="stylesheet" href="main.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="elements">
+            <i class="fas fa-hand-rock element pointer" id="rock"></i>
+            <i class="fas fa-hand-paper element pointer" id="paper"></i>
+            <i class="fas fa-hand-scissors element pointer" id="scissors"></i>
+        </div>
+        <div class="scoreDiv">
+            <p><span class="span" id="userScore">0</span>&nbsp;-&nbsp;<span class="span" id="cpuScore">0</span>&nbsp;-&nbsp;<span class="span" id="tieScore">0</span></p>
+            <p><span class="span" id="userName">Player</span>&nbsp;-&nbsp;<span class="span">CPU</span>&nbsp;-&nbsp;<span class="span">Tie</span></p>
+        </div>
+        <div class="elements">
+            <i class="fas fa-hand-rock element" id="rockCpu"></i>
+            <i class="fas fa-hand-paper element" id="paperCpu"></i>
+            <i class="fas fa-hand-scissors element" id="scissorsCpu"></i>
+        </div>
+        <div class="restartDiv">
+            <button class="button reset">Reset score</button>
+            <p class="smallText">Click on "Player" to change name</p>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>

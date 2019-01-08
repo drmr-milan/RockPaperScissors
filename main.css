@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Lora', serif;
+    color: white;
+}
+
+body {
+    background-image: linear-gradient(to right, #e53935, #e35d5b);
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-block;
+    margin-top: 200px;
+    padding: 30px 20px 20px 20px;
+    border: 5px solid white;
+    box-shadow: 10px 10px 45px 0px rgba(0,0,0,0.75);
+    text-align: center;
+}
+
+.span {
+    display: inline-block;
+    width: 80px;
+    font-size: 1.2em;
+}
+
+.pointer {
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.pointer:hover {
+    transform: scale(1.3);
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.75);
+}
+
+.shadow {
+    transition: all .5s;
+    transform: scale(1.3);
+    text-shadow: 4px 4px 10px rgba(0,0,0,0.75);
+}
+
+p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.element {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.element:not(:last-child) {
+    margin-right: 30px;
+}
+
+.scoreDiv {
+    margin: 10px 0 20px 0;
+}
+
+#userName {
+    cursor: pointer;
+}
+
+.button {
+    font-family: inherit;
+    color: inherit;
+    font-size: 1em;
+    background-color: transparent;
+    padding: 5px 10px;
+    border: 2px solid white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#paper,
+#paperCpu,
+#rock,
+#rockCpu {
+    transform: rotate(90deg);
+}
+
+#scissors,
+#scissorsCpu {
+    transform: rotateY(180deg);
+}
+
+.smallText {
+    font-size: .8em;    
+}
+
+.animation {
+    animation: .5s bigger forwards;
+}
+
+@keyframes bigger {
+    50% { transform: scale(2); }
+}
